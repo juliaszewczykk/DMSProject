@@ -115,3 +115,6 @@ title(['Spectrum of Vertical Displacement at Node B (Node ' num2str(nodeB) ')'])
 xlabel('Frequency [Hz]'); ylabel('|Y_B| [m]');
 hold on
 add_nat_freq_lines(Nat_freq);
+
+% Alias for compatibility with acceleration scripts
+X_0_freq = U_F_freq;

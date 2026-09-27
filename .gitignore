@@ -1,0 +1,53 @@
+# ====================================================================
+# MATLAB .gitignore
+# ====================================================================
+
+# MATLAB Autosaves and Backups
+*.asv
+*.m~
+*.autosave
+*.mat.backup
+
+# MATLAB Figure and Workspace Temporary Dumps
+*.fig.bak
+*.mat.tmp
+
+# MATLAB Code Generation & Compilation
+slprj/
+codegen/
+*.mex*
+*.p
+*.slxc
+
+# MATLAB Profiler & Diagnostic Output
+profile_results.html
+*.mcr
+mcrCache*
+
+# ====================================================================
+# Environment & Temporary Execution Helpers
+# ====================================================================
+powershell.bat
+*.log
+scratch/
+temp/
+
+# ====================================================================
+# Operating System & IDE Files
+# ====================================================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

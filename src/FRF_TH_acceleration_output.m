@@ -1,7 +1,13 @@
+% Ensure frequency response displacement matrix is available
+if ~exist('X_0_freq', 'var') && exist('U_F_freq', 'var')
+    X_0_freq = U_F_freq;
+end
+
 % 1. Generazione corretta del vettore pulsazioni COMPLETO (per FFT bilaterale)
 % Questo ordine [0, pos, neg] è cruciale per la FFT di Matlab.
 % Funziona sia per N pari che dispari.
 w_full_vec = [0 : ceil(N/2)-1, -floor(N/2) : -1] * df * 2 * pi;
+
 
 % Assicuriamoci che sia un vettore riga per moltiplicare la matrice [Nf x N]
 if size(w_full_vec, 1) > 1, w_full_vec = w_full_vec.'; end

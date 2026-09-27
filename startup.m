@@ -1,19 +1,19 @@
-clc
-close all
-clear all
+% STARTUP - DMSProject Initialization Script
+% Dynamics of Mechanical Systems - Single-Span Truss Bridge Analysis
+% Politecnico di Milano | A.Y. 2025/2026
 
-load("bridge_mkr.mat");
-load("bridge_fre.mat", "freq");
-Nat_freq = freq(freq < 30);
-add_nat_freq_lines = @(freqs) xline(freqs, '--r', 'Alpha', 0.6, 'LineWidth', 1);
+rootDir = fileparts(mfilename('fullpath'));
+addpath(fullfile(rootDir, 'src'));
+addpath(fullfile(rootDir, 'data'));
 
-
-es = input("Fino a che punto fare: ");
-
-if es == 4.1
-    FRF_input_displacement
-elseif es == 4.2
-    FRF_input_displacement;
-    Partizionando_matrici
-    FRF_output_displacement
-end
+disp('========================================================================');
+disp('  Dynamics of Mechanical Systems - Truss Bridge Dynamic Analysis');
+disp('  Politecnico di Milano | A.Y. 2025/2026');
+disp('========================================================================');
+disp('  Cartelle di progetto caricate nel percorso di ricerca MATLAB:');
+disp('    - src/  : Codice sorgente e algoritmi di analisi dinamica');
+disp('    - data/ : Matrici FEM (*.mat), modello di calcolo (*.inp), sisma (*.txt)');
+disp('    - docs/ : Relazione tecnica del corso (Yearwork_Report.pdf)');
+disp('------------------------------------------------------------------------');
+disp('  Digita "main" per avviare la pipeline completa o selezionare un punto.');
+disp('========================================================================');
