@@ -328,7 +328,7 @@ Max Acceleration B: 3.659 m/s^2 (0.37 g)
 
 - **Author**: **Julia Szewczyk** ([@juliaszewczykk](https://github.com/juliaszewczykk))
 - **Institution**: **Politecnico di Milano** — School of Industrial and Information Engineering
-- **Degree Course**: Master of Science in Mechanical Engineering
+- **Degree Course**: Master of Science in Automation and Control Engineering
 - **Course**: *Dynamics of Mechanical Systems* (Academic Year 2025/2026)
 - **Course Instructors**:
   - Prof. **Giuseppe Bucca**
